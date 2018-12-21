@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/fin" />
+
+    <Button
+        android:id="@+id/but11"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/tulisandate3"
+        android:layout_alignEnd="@+id/tulisandate3"
+        android:layout_alignRight="@+id/tulisandate3" />
+
+    <Button
+        android:id="@+id/but22"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/but11"
+        android:layout_alignBottom="@+id/but11"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tulisandate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/finish"
+        android:layout_alignLeft="@+id/finish"
+        android:layout_alignStart="@+id/finish"
+        android:layout_marginBottom="23dp"
+        android:text="select date" />
+
+    <TextView
+        android:id="@+id/tulisanbkdetails3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tulisandate3"
+        android:layout_alignBottom="@+id/tulisandate3"
+        android:layout_centerHorizontal="true"
+        android:text="booking details" />
+
+    <TextView
+        android:id="@+id/tulisanfinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tulisanbkdetails3"
+        android:layout_alignBottom="@+id/tulisanbkdetails3"
+        android:layout_alignEnd="@+id/finish"
+        android:layout_alignRight="@+id/finish"
+        android:text="finish  " />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/finish">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/tulisanaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Capture the Detail Booking"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+    <TextView
+    android:id="@+id/tulisanaja2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/tulisanaja"
+    android:layout_alignStart="@+id/tulisanaja"
+    android:layout_below="@+id/tulisanaja"
+    android:layout_marginTop="12dp"
+    android:text="- Booking Details -"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tulisanaja2"
+        android:layout_alignStart="@+id/tulisanaja2"
+        android:layout_below="@+id/tulisanaja2"
+        android:layout_marginTop="13dp"
+        android:text="Beauty Provider"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtnya1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tulisanaja2"
+        android:layout_alignStart="@+id/tulisanaja2"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="13dp"
+        android:text="text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tulisanaja2"
+        android:layout_alignStart="@+id/tulisanaja2"
+        android:layout_below="@+id/txtnya1"
+        android:layout_marginTop="13dp"
+        android:text="Appointment Date"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtnya2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tulisanaja2"
+        android:layout_alignStart="@+id/tulisanaja2"
+        android:layout_below="@+id/txt2"
+        android:layout_marginTop="13dp"
+        android:text="text date, "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtnya2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="text time "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tulisanaja2"
+        android:layout_alignStart="@+id/tulisanaja2"
+        android:layout_below="@+id/txtnya2"
+        android:layout_marginTop="13dp"
+        android:text="Total Price"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtnya3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tulisanaja2"
+        android:layout_alignStart="@+id/tulisanaja2"
+        android:layout_below="@+id/txt3"
+        android:layout_marginTop="13dp"
+        android:text="200.000 "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tulisanaja2"
+        android:layout_alignStart="@+id/tulisanaja2"
+        android:layout_below="@+id/txtnya3"
+        android:layout_marginTop="13dp"
+        android:text="Notes"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtnya5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tulisanaja2"
+        android:layout_alignStart="@+id/tulisanaja2"
+        android:layout_below="@+id/txt5"
+        android:layout_marginTop="13dp"
+        android:text="text Notes "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/bt_bookapp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="BOOK APPOINMENT"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_below="@id/txtnya5"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

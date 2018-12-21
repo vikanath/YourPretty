@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/det" />
+
+    <Button
+        android:id="@+id/but1"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/tulisandate2"
+        android:layout_alignEnd="@+id/tulisandate2"
+        android:layout_alignRight="@+id/tulisandate2" />
+
+    <Button
+        android:id="@+id/but33"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/but1"
+        android:layout_alignBottom="@+id/but1"
+        android:layout_alignEnd="@+id/detail"
+        android:layout_alignRight="@+id/detail" />
+
+    <TextView
+        android:id="@+id/tulisandate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/detail"
+        android:layout_alignLeft="@+id/detail"
+        android:layout_alignStart="@+id/detail"
+        android:layout_marginBottom="23dp"
+        android:text="select date" />
+
+    <TextView
+        android:id="@+id/tulisanbkdetails2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tulisandate2"
+        android:layout_alignBottom="@+id/tulisandate2"
+        android:layout_centerHorizontal="true"
+        android:text="booking details" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/detail">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            >
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beauty Provider    : "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textNamenya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/textName"
+                android:layout_toRightOf="@+id/textName"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="namanya"
+                android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textDatenya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNamenya"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:text="tanggalnya"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textDatenya"
+        android:layout_alignStart="@+id/textDatenya"
+        android:layout_below="@+id/textDatenya"
+        android:text="Time    : "
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/timeclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textTime"
+                android:text="Click the icon"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"/>
+    <Button
+        android:id="@+id/bt_timePicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/timeclick"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/time"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt_timePicker2"
+                android:layout_marginTop="20dp"
+                android:text="Notes   :"
+                android:textSize="20sp"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:id="@+id/editTextNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textDatenya"
+                android:layout_alignStart="@+id/textDatenya"
+                android:layout_alignTop="@+id/textView6"
+                android:ems="200"
+                android:inputType="text"
+                android:layout_marginTop="20dp"
+                android:layout_margin="20dp"
+                android:textColorHint="@color/black"/>
+
+            <Button
+                android:layout_below="@id/editTextNotes"
+                android:id="@+id/buttonbookings"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="B O O K I N G"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

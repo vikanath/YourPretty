@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/nat"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/nat" />
+
+    <ScrollView
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollnt">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/natural"
+                android:layout_width="300dp"
+                android:layout_height="360dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="50dp"
+                android:src="@drawable/nat1" />
+
+            <ImageView
+                android:layout_below="@id/natural"
+                android:id="@+id/natural2"
+                android:layout_width="300dp"
+                android:layout_height="360dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="50dp"
+                android:src="@drawable/nat2" />
+
+            <ImageView
+                android:layout_below="@id/natural2"
+                android:id="@+id/natural3"
+                android:layout_width="300dp"
+                android:layout_height="360dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="50dp"
+                android:src="@drawable/nat3" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

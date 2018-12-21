@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollerma">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beauty Provider"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ErmaMakeup"
+                android:textSize="20sp"
+                android:layout_margin="50dp"
+                android:id="@+id/penjelasan2" />
+
+            <Button
+                android:id="@+id/mapserma"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/maps2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="INFO"
+                android:id="@+id/button2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_margin="20dp"
+                android:id="@+id/relativeLayout">
+
+                <ImageView
+                    android:id="@+id/iconmaps2"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/maps"/>
+
+                <ImageView
+                    android:id="@+id/iconfacilities2"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/facilities"
+                    android:layout_alignRight="@+id/iconmaps2"
+                    android:layout_below="@id/iconmaps2"
+                    android:layout_marginTop="20dp"/>
+
+                <ImageView
+                    android:id="@+id/iconpayment2"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/payment"
+                    android:layout_alignRight="@+id/iconfacilities2"
+                    android:layout_below="@id/iconfacilities2"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/address2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Gresik - Malang" />
+                <TextView
+                    android:id="@+id/facilities2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Makeup Wisuda, Prewedding, Makeup by request, Paket Wedding" />
+                <TextView
+                    android:id="@+id/DownPayment2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/facilities2"
+                    android:layout_below="@+id/facilities2"
+                    android:layout_marginTop="30dp"
+                    android:text="DP / Via Transfer" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout2">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="300dp"
+                    android:src="@drawable/time"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="300dp"
+                    android:text="03.00 - 12.00"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="300dp"
+                    android:src="@drawable/price"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="300dp"
+                    android:text="200K"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+            </LinearLayout>
+
+            <!--<com.google.android.gms.maps.MapView-->
+                <!--android:id="@+id/mapView2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_below="@+id/linearLayout2" />-->
+
+            <Button
+                android:id="@+id/buttonbooking2"
+                android:layout_below="@id/linearLayout2"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="BOOK NOW"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">YourPretty</string>
+    <string name="title_activity_akun">akun</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="logout">L O G O U T</string>
+</resources>
